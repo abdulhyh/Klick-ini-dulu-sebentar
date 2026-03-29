@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Permintaan Maaf</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        .container {
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        h2 { color: #333; text-align: center; }
+        #output { white-space: pre-wrap; color: #555; }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Pesan Untukmu</h2>
+        <hr>
+        <div id="output"></div>
+    </div>
+
+    <script>
+        const jumlah = 2000;
+        const pesan = "Maafin aku ya, aku janji nggak bakal ulangin lagi. 🙏✨\n";
+        let hasil = "";
+
+        for (let i = 1; i <= jumlah; i++) {
+            hasil += i + ". " + pesan;
+        }
+
+        document.getElementById("output").innerText = hasil;
+    </script>
+</body>
+</html>
